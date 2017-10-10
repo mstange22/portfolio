@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Michael Stange</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/3.3/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="name">MICHAEL STANGE</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/mstange22" target="_blank"><img src="assets/images/gh-icon.png" class="icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mike-stange-21004341/" target="_blank"><img src="assets/images/li-icon.png" class="icon"></a></li>
+                    <li><a href="https://www.strava.com/athletes/412030" target="_blank"><img src="assets/images/strava-icon.png" class="icon"></a></li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Supplemental nav for displaying name on small screens (default display: none) -->
+    <section id="nav-2">Michael Stange</section>
+
+    <h2 id="portfolio-header">Portfolio</h2>
+    <h3>(Click on a panel to visit deployed site)</h3>
+    <div class="container" id="cards-container">
+        <div class="row image-row">
+            <div class="col-xs-6">
+            	<a href="https://race-finder.herokuapp.com/" target="_blank">
+            		<div class="portfolio-card">
+                		<div class="front">
+                            <img class="portfolio-image" id="race-finder" src="assets/images/race-finder.jpg">
+                    	</div>                
+                    	<div class="back">
+                    		<h2>Race Finder</h2>
+                    		<p>Full-stack web application that matches users with California marathons, returning best matches in date query range.  Interfaces with Wunderground API for temperatures.</p>
+                    		<p>HTML, CSS, Materialize, JavaScript, jQuery, node.js, Express, Handlebars, mySQL</p>
+							<p><span class="card-title">Project Manager, UI/UX developer, Back-end developer</span></p>
+                    	</div>
+					</div>
+            	</a>
+            </div>
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/bandwagon/" target="_blank">
+
+            		<div class="portfolio-card">
+                		<div class="front">
+                    		<img class="portfolio-image" id="bandwagon" src="assets/images/bandwagon.jpg">
+
+                    	</div>               
+                    	<div class="back">
+                    		<h2>BandWagon</h2>
+                    		<p>Front-end web application that allows users to search Wikipedia for bands or artists.  Displays facts and plays content through SoundCloud API.</p>
+                    		<p>HTML, CSS, Bootstrap, Skeleton, JavaScript, jQuery</p>
+							<p> <span class="card-title">Lead Engineer / Developer (team of 5)</span></p>
+                    	</div>
+                	</div>
+                </a>
+            </div>
+        </div>
+        <div class="row image-row">
+            <div class="col-xs-6">
+            	<a href="https://friend-finder-deployed.herokuapp.com/" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                            <img class="portfolio-image" id="friend-finder" src="assets/images/friend-finder.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Friend Finder</h2>
+                    		<p>Web application that matches users with pre-set friends (I chose Disney characters), based on the answers to 10 personality questions.</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery, node.js, Express</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6">
+            	<a href="https://eat-da-burger-ms.herokuapp.com/" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="burger" src="assets/images/burger.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Eat-Da-Burger</h2>
+                    		<p>Full-stack web application that allows users to "eat-da burger", create burgers,
+                    		and delete burgers.</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery, node.js, Express, HandlebarsJS, mySQL, Sequelize CLI</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row image-row">
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/giphy-generator/" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+            				<img class="portfolio-image" id="giphy" src="assets/images/giphy.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Giphy Generator</h2>
+                    		<p>Front-end web application that allows users to search for gifs from Giphy through their API.  Create categories and search.  Remove categories</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/capitals-quiz" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="capitals" src="assets/images/capitals.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Capitals Quiz</h2>
+                    		<p>Front-end web application that allows users to test their knowledge on state and world capitals.</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row image-row">
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/hangman-2.0" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="hangman" src="assets/images/hangman.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Hangman</h2>
+                    		<p>Front-end web application that allows users to play hangman wiht U.S. States</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/star-wars" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="star-wars" src="assets/images/star-wars.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Star Wars RPG</h2>
+                    		<p>Front-end role-playing game.  Choose a character and an opponent and battle.  Game ends if the user defeats all other characters or if user is defeated.</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row image-row">
+            <div class="col-xs-6">
+            	<a href="https://scratch.mit.edu/projects/166580513" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="cat-mouse" src="assets/images/cat-mouse.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>Cat & Mouse (and Friends)</h2>
+                    		<p>Fun shooter game developed in Scratch.  Use the arrow keys to controll the cat.  Shoot down all of the mice (lose a life if one gets away).  Beware of lobsters throwing starfish and sharks shooting lightning bolts.  Bats have power up (auto-fire) and 1-UP fish bring extra life.</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6">
+            	<a href="https://mstange22.github.io/crystals" target="_blank">
+            		<div class="portfolio-card">
+            			<div class="front">
+                    		<img class="portfolio-image" id="crystals" src="assets/images/crystals.jpg">
+                        </div>
+                        <div class="back">
+                    		<h2>CrystalsCollector</h2>
+                    		<p>Numbers game.  Try to hit the randomly-generated number by clicking on the right combination of crystals.  Each crystal contains a random value, but you can only tell what it is from how it affects your score.</p>
+							<p><span class="card-title">Sole developer</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   	<script src="assets/js/app.js"></script>
+</body>
+</html>
