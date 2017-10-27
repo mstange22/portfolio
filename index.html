@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Michael Stange</title>
+    <title>Michael Stange</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/3.3/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
@@ -27,7 +27,7 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li id="name">MICHAEL STANGE</li>
+                    <a href="portfolio.html"><li id="name">PORTFOLIO</li></a>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/mstange22" target="_blank"><img src="assets/images/gh-icon.png" class="icon"></a></li>
@@ -40,190 +40,39 @@
         </div>
     </nav>
     <!-- Supplemental nav for displaying name on small screens (default display: none) -->
-    <section id="nav-2">Michael Stange</section>
+    <section id="nav-2">Portfolio</section>
 
-    <h2 id="portfolio-header">Portfolio</h2>
-    <h3>(Click on a panel to visit deployed site)</h3>
-    <div class="container" id="cards-container">
-        <div class="row image-row">
-            <div class="col-xs-6">
-            	<a href="https://race-finder.herokuapp.com/" target="_blank">
-            		<div class="portfolio-card">
-                		<div class="front">
-                            <img class="portfolio-image" id="race-finder" src="assets/images/race-finder.jpg">
-                    	</div>                
-                    	<div class="back">
-                    		<h2>Race Finder</h2>
-                    		<p>Full-stack web application that matches users with California marathons, returning best matches in date query range.  Interfaces with Wunderground API for temperatures.</p>
-                    		<p>HTML, CSS, Materialize, JavaScript, jQuery, node.js, Express, Handlebars, mySQL</p>
-							<p><span class="card-title">Project Manager, UI/UX developer, Back-end developer</span></p>
-                    	</div>
-					</div>
-            	</a>
-            </div>
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/bandwagon/" target="_blank">
+    <h2 id="portfolio-header">Michael Stange</h2>
+    <img id="mike-img" src="assets/images/mike2.jpg" />
+    <div class="container">
+        High-energy individual with a passion for programming.  Experienced in full-stack web development, C/C++ & Java.
 
-            		<div class="portfolio-card">
-                		<div class="front">
-                    		<img class="portfolio-image" id="bandwagon" src="assets/images/bandwagon.jpg">
+        <h2>What are your career goals?</h2>
+        I like nothing more than writing code, developing meaningful apps and continuing to learn and evolve along with new technologies.  I'd like to keep doing it until I can't do it any more.
 
-                    	</div>               
-                    	<div class="back">
-                    		<h2>BandWagon</h2>
-                    		<p>Front-end web application that allows users to search Wikipedia for bands or artists.  Displays facts and plays content through SoundCloud API.</p>
-                    		<p>HTML, CSS, Bootstrap, Skeleton, JavaScript, jQuery</p>
-							<p> <span class="card-title">Lead Engineer / Developer (team of 5)</span></p>
-                    	</div>
-                	</div>
-                </a>
-            </div>
-        </div>
-        <div class="row image-row">
-            <div class="col-xs-6">
-            	<a href="https://newscraper-ms.herokuapp.com/" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                            <img class="portfolio-image" id="friend-finder" src="assets/images/newscraper.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Newscraper</h2>
-                    		<p>Full-stack web application that scrapes the New York Times Business Day</p>
-                    		<p>HTML, CSS, Pure, JavaScript, jQuery, node.js, Express, Handlebars, MongoDB, Mongoose</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- <div class="col-xs-6">
-            	<a href="https://friend-finder-deployed.herokuapp.com/" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                            <img class="portfolio-image" id="friend-finder" src="assets/images/friend-finder.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Friend Finder</h2>
-                    		<p>Web application that matches users with pre-set friends (I chose Disney characters), based on the answers to 10 personality questions.</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery, node.js, Express</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-            <div class="col-xs-6">
-            	<a href="https://eat-da-burger-ms.herokuapp.com/" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="burger" src="assets/images/burger.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Eat-Da-Burger</h2>
-                    		<p>Full-stack web application that allows users to "eat-da-burger", create burgers,
-                    		and delete burgers.</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery, node.js, Express, HandlebarsJS, mySQL, Sequelize CLI</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row image-row">
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/giphy-generator/" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-            				<img class="portfolio-image" id="giphy" src="assets/images/giphy.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Giphy Generator</h2>
-                    		<p>Front-end web application that allows users to search for gifs from Giphy through their API.  Create categories and search.  Remove categories</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/capitals-quiz" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="capitals" src="assets/images/capitals.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Capitals Quiz</h2>
-                    		<p>Front-end web application that allows users to test their knowledge on state and world capitals.</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row image-row">
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/hangman-2.0" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="hangman" src="assets/images/hangman.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Hangman</h2>
-                    		<p>Front-end web application that allows users to play hangman with U.S. States</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/star-wars" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="star-wars" src="assets/images/star-wars.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Star Wars RPG</h2>
-                    		<p>Front-end role-playing game.  Choose a character and an opponent and battle.  Game ends if the user defeats all other characters or if user is defeated.</p>
-                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row image-row">
-            <div class="col-xs-6">
-            	<a href="https://scratch.mit.edu/projects/166580513" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="cat-mouse" src="assets/images/cat-mouse.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>Cat &amp; Mouse (and Friends)</h2>
-                    		<p>Fun shooter game developed in Scratch.  Use the arrow keys to controll the cat.  Shoot down all of the mice (lose a life if one gets away).  Beware of lobsters throwing starfish and sharks shooting lightning bolts.  Bats have power up (auto-fire) and 1-UP fish bring extra life.</p>
-							<p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-6">
-            	<a href="https://mstange22.github.io/crystals" target="_blank">
-            		<div class="portfolio-card">
-            			<div class="front">
-                    		<img class="portfolio-image" id="crystals" src="assets/images/crystals.jpg">
-                        </div>
-                        <div class="back">
-                    		<h2>CrystalsCollector</h2>
-                    		<p>Numbers game.  Try to hit the randomly-generated number by clicking on the right combination of crystals.  Each crystal contains a random value, but you can only tell what it is from how it affects your score.</p>
-                            <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
-                            <p><span class="card-title">Sole developer</span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <h2>Talk about your web development experience and what qualities you possess that help you in this role.</h2>
+        I’ve developed full-stack applications following the MVC paradigm using HTML/CSS/Javascript and/or React on the front end, node.js & Express on the server side, and MongoDB and mySQL as databases.  My past experience in C/C++ & Java has really helped absorb concepts in JavaScript and I enjoy writing modules to control server logic and drive UX components.
+
+        <h2>Describe a challenging experience you have had working in a diverse population and how you have been successful in that environment.</h2>
+        At my last job, I worked my way up to VP of Project Management at a nationwide contracting corporation.  Despite being hired to implement the company's software system and administer the SQL database, I entered a management trainee program which required that I worked in all departments for a period of time to gain up-close exposure to all aspects of the company’s business.  Understanding that we all come from different backgrounds, and have differnt points of view, has really helped me empathize with others during my career.
+
+        <h2>What role do you typically play on a team?</h2>
+        I usually gravitate to leader unless there is someone else who really enjoys telling people what to do.  I would really prefer to be a productive team member as opposed to managing others.
+
+        <h2>What led you to coding?</h2>
+        When I was about 10 years old, I was introduced to programming on an early 8086 PC.  I really enjoyed the problem-solving and logic involved with getting computer programs to work.  I was writing toy programs like text adventure games very quickly.  While I’ve had other interests over the years, programming has always come naturally to me.
+
+        <h2>Describe the projects you're most proud of and the most difficult problems you've solved as an engineer.</h2>
+        I developed and implemented a statistics program for recreational sports leagues.  It was a command line application written in C++ and used CSV files for data storage.  I’m sure there may be more efficient solutions, but I was proud to have invented, implemented, pitched, sold and delivered a solid product that revolutionized a small business.
+
+        <h2>What is your favorite programming language and why?</h2>
+        Right now, I'd have to say JavaScript, especially combined with jQuery.  It's very similar to C and Java, but allows a programmer to control the behavior of web pages that are visible to the public.  My past experience in programming was limited to work buried deep in the insides of a machine and rarely saw the light of day.
+
+        <h2>How do you keep up-to-date with new and emerging technologies?</h2>
+        I’ve taken on-line courses on edX and CodeSchool and I recently enrolled in a web development program at UCSD to refresh my programming skills and learn current technologies and best practices.
+
+        <h2>What do you do when you're not writing code?</h2>
+        I'm a former traditional team-sport athlete that took to endurance racing later in life.  I'm a competitive age group marathoner and have been known to get on a bike from time to time.  Sometimes, I'll even swim.  I also enjoy spending time with family and solving the New York Times Crossword Puzzle.
     </div>
-
-   	<script src="assets/js/app.js"></script>
 </body>
 </html>
