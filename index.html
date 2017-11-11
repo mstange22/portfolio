@@ -1,85 +1,422 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Stange</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://getbootstrap.com/docs/3.3/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/images/favicon-user.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon-user.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/images/favicon-user.ico">
-	<link rel="icon" href="assets/images/favicon-user.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <a href="portfolio.html"><li id="name">PORTFOLIO</li></a>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/mstange22" target="_blank"><img src="assets/images/gh-icon.png" class="icon"></a></li>
-                    <li><a href="https://www.linkedin.com/in/mike-stange-21004341/" target="_blank"><img src="assets/images/li-icon.png" class="icon"></a></li>
-                    <li><a href="https://www.strava.com/athletes/412030" target="_blank"><img src="assets/images/strava-icon.png" class="icon"></a></li>
-                </ul>
-                </li>
-                </ul>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Michael Stange</h1>
+            <h2>Software Developer</h2>
+            <a href="assets/pdf/resume.pdf" target="_blank" class="btn-rounded-white">View Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <h2 class="heading">About Me</h2>
+        <div class="container">
+        	<div class="row">
+            	<div class="col-md-4">
+        			<img id="about-me-image" src="assets/images/mike-sm.png" />
+                </div>
+            	<div class="col-md-8">
+            		<div id="about-me-text">
+	                    <p>Hi, I'm Mike.  A high-energy team player with a passion for programming.
+	                    </p>
+	                    <br />
+						<p>
+							As a full-stack web developer, I've worked with HTML5, CSS3 & JavaScript on the front end, building applications with frameworks such as React, jQuery, Bootstrap, Materialize, Pure & Skeleton.  Node.js, Express, Handlebars, SQL & MongoDB.
+						</p>
+						<br />
+						<p>
+							<a id="view-more-about-me" href="#">See More</a>
+						</p>
+					</div>
+				    <div id="more-about-me">
+				        <h3>What are your career goals?</h3>
+				        <p>
+				        	I'd like nothing more than to be writing code, developing meaningful apps and continuing to learn and evolve along with new technologies.
+						</p>
+				        <h3>Talk about your web development experience and what qualities you possess that help you in this role.</h3>
+				        <p>
+				        	I’ve developed full-stack applications following the MVC paradigm using HTML/CSS/Javascript and/or React on the front end, node.js & Express on the server side, and MongoDB and mySQL as databases.  My past experience in C/C++ & Java has really helped absorb concepts in JavaScript and I enjoy writing modules to control server logic and drive UX components.
+						</p>
+				        <h3>Describe a challenging experience you have had working in a diverse population and how you have been successful in that environment.</h3>
+				        <p>
+					        At my last job, I worked my way up to VP of Project Management at a nationwide contracting corporation.  Despite being hired to implement the company's software system and administer the SQL database, I entered a management trainee program which required that I worked in all departments for a period of time to gain up-close exposure to all aspects of the company’s business.  Understanding that we all come from different backgrounds, and have differnt points of view, has really helped me empathize with others during my career.
+						</p>
+				        <h3>What role do you typically play on a team?</h3>
+				        <p>
+				        	I usually gravitate to leader unless there is someone else who really enjoys telling people what to do.  I would really prefer to be a productive team member as opposed to managing others.
+						</p>
+				        <h3>What led you to coding?</h3>
+				        <p>
+				        	When I was about 10 years old, I was introduced to programming on an early 8086 PC.  I really enjoyed the problem-solving and logic involved with getting computer programs to work.  I was writing toy programs like text adventure games very quickly.  While I’ve had other interests over the years, programming has always come naturally to me.
+						</p>
+				        <h3>Describe the projects you're most proud of and the most difficult problems you've solved as an engineer.</h3>
+				        <p>
+				        	I developed and implemented a statistics program for recreational sports leagues.  It was a command line application written in C++ and used CSV files for data storage.  I’m sure there may be more efficient solutions, but I was proud to have invented, implemented, pitched, sold and delivered a solid product that revolutionized a small business.
+						</p>
+				        <h3>What is your favorite programming language and why?</h3>
+				        <p>
+				        Right now, I'd have to say JavaScript, especially combined with jQuery.  It's very similar to C and Java, but allows a programmer to control the behavior of web pages that are visible to the public.  My past experience in programming was limited to work buried deep in the insides of a machine and rarely saw the light of day.
+						</p>
+				        <h3>How do you keep up-to-date with new and emerging technologies?</h3>
+				        <p>
+				        	I’ve taken on-line courses on edX and CodeSchool and I recently enrolled in a web development program at UCSD to refresh my programming skills and learn current technologies and best practices.  I'm currently continuing my studies with "vanilla" JavaScript, ES6 & React (Udacity Nanodegree Program).
+						</p>
+				        <h3>What do you do when you're not writing code?</h3>
+				        <p>
+				        	I'm a former traditional team-sport athlete that took to endurance racing later in life.  I'm a competitive age group marathoner and have been known to get on a bike from time to time.  Sometimes, I'll even swim.  I also enjoy spending time with family and solving the New York Times Crossword Puzzle.
+						</p>
+						<br />
+						<p>
+							<a id="view-less-about-me" href="#">See Less</a>
+						</p>
+				    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- Supplemental nav for displaying name on small screens (default display: none) -->
-    <section id="nav-2">Portfolio</section>
-
-    <h2 id="portfolio-header">Michael Stange</h2>
-    <img id="mike-img" src="assets/images/mike.jpg" />
-    <div class="container">
-        <h2>Software Developer</h2>
-        High-energy team player with a passion for programming.  Experienced in full-stack web development, C/C++ & Java.
-
-        <h2>What are your career goals?</h2>
-        I'd like nothing more than to be writing code, developing meaningful apps and continuing to learn and evolve along with new technologies.
-
-        <h2>Talk about your web development experience and what qualities you possess that help you in this role.</h2>
-        I’ve developed full-stack applications following the MVC paradigm using HTML/CSS/Javascript and/or React on the front end, node.js & Express on the server side, and MongoDB and mySQL as databases.  My past experience in C/C++ & Java has really helped absorb concepts in JavaScript and I enjoy writing modules to control server logic and drive UX components.
-
-        <h2>Describe a challenging experience you have had working in a diverse population and how you have been successful in that environment.</h2>
-        At my last job, I worked my way up to VP of Project Management at a nationwide contracting corporation.  Despite being hired to implement the company's software system and administer the SQL database, I entered a management trainee program which required that I worked in all departments for a period of time to gain up-close exposure to all aspects of the company’s business.  Understanding that we all come from different backgrounds, and have differnt points of view, has really helped me empathize with others during my career.
-
-        <h2>What role do you typically play on a team?</h2>
-        I usually gravitate to leader unless there is someone else who really enjoys telling people what to do.  I would really prefer to be a productive team member as opposed to managing others.
-
-        <h2>What led you to coding?</h2>
-        When I was about 10 years old, I was introduced to programming on an early 8086 PC.  I really enjoyed the problem-solving and logic involved with getting computer programs to work.  I was writing toy programs like text adventure games very quickly.  While I’ve had other interests over the years, programming has always come naturally to me.
-
-        <h2>Describe the projects you're most proud of and the most difficult problems you've solved as an engineer.</h2>
-        I developed and implemented a statistics program for recreational sports leagues.  It was a command line application written in C++ and used CSV files for data storage.  I’m sure there may be more efficient solutions, but I was proud to have invented, implemented, pitched, sold and delivered a solid product that revolutionized a small business.
-
-        <h2>What is your favorite programming language and why?</h2>
-        Right now, I'd have to say JavaScript, especially combined with jQuery.  It's very similar to C and Java, but allows a programmer to control the behavior of web pages that are visible to the public.  My past experience in programming was limited to work buried deep in the insides of a machine and rarely saw the light of day.
-
-        <h2>How do you keep up-to-date with new and emerging technologies?</h2>
-        I’ve taken on-line courses on edX and CodeSchool and I recently enrolled in a web development program at UCSD to refresh my programming skills and learn current technologies and best practices.
-
-        <h2>What do you do when you're not writing code?</h2>
-        I'm a former traditional team-sport athlete that took to endurance racing later in life.  I'm a competitive age group marathoner and have been known to get on a bike from time to time.  Sometimes, I'll even swim.  I also enjoy spending time with family and solving the New York Times Crossword Puzzle.
-
-        <h2>Are you still here?</h2>
-        Contact me at <a href="mailto:mikestange@gmail.com">mikestange@gmail.com</a>
     </div>
-    <br />
-    <br />
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="August 2002 – March 2017">
+                <h3>Lombardi Contracting Corporation</h3>
+                <h4>Vice President - Project Management</h4>
+                <p>
+ 					Managed teams of project managers, engineers, coordinators & estimators.  Also served as the last point of review for all sensitive company releases.  Implemented software solutions in Intuit MasterBuilder / Sage Contractor 100, using a SQL database.
+                </p>
+            </div>
+
+            <div data-date="June 2002 – September 2003">
+                <h3>Freelance</h3>
+                <h4>Software Engineer</h4>
+                <p>
+                    Designed and developed solutions for statistics reporting for recreational sports leagues.  Command line applications written in C/C++, using csv file structure and generating HTML. 
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Union Bank of California</h3>
+                <h4>Programming Intern - Technical Lead</h4>
+                <p>
+					Paid summer internship that turned into a long-term, part-time position, working on special projects in COBOL / CICS.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of California, San Diego</h3>
+            <span class="education-date">Aug 2017 - Nov 2017</span>
+            <h4>Coding Boot Camp - Full-Stack Web Development</h4>
+            <p>
+				Full-time, immersive web development program focusing on full-stack applications using HTML, CSS / Bootstrap, JavaScript / JQuery / React, Node.js, Express, Handlebars MySQL /Sequelize & MongoDB / Mongoose.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>University of California, San Diego</h3>
+            <span class="education-date">Sept 1995 - Dec 2001</span>
+            <h4>Mathematics - Computer Science</h4>
+            <ul>
+                <li>
+                    Data Structures & Algorithms
+                </li>
+                <li>
+                    Programming in C/C++, Java & Assembly
+                </li>
+                <li>
+                    Compiler Construction
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://mstange22.github.io/bandwagon/" target="_blank"><img src="assets/images/bandwagon.jpg" /></a>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Bandwagon</h3>
+                		<p>Front-end web application that allows users to search Wikipedia for bands or artists.  Displays facts and plays content through SoundCloud API.</p>
+                		<p>HTML, CSS, Bootstrap, Skeleton, JavaScript, jQuery</p>
+						<p><em>Lead Engineer / Developer (team of 5)</em></p>
+                        <a href="https://mstange22.github.io/bandwagon/" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://vox-royale.herokuapp.com/" target="_blank"><img src="assets/images/vox.jpg" /></a>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>VOX Royale</h3>
+                        <p>Full-stack speech recognition application in React JS.  Challenge a friend to play a game or 
+                        just practice to improve speech or reduce accents</p>
+                        <P>HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, Express, MongoDB</p>
+                        <p><em>Project Manager, UX (Game Logic), MVC Architect (team of 6)</em></p>
+                        <a href="https://vox-royale.herokuapp.com/" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <a href="https://race-finder.herokuapp.com/" target="_blank"><img src="assets/images/race-finder.jpg" /></a>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Race Finder</h3>
+                		<p>Full-stack web application that matches users with California marathons, returning best matches in date query range.  Interfaces with Wunderground API for temperatures.</p>
+                		<p>HTML, CSS, Materialize, JavaScript, jQuery, Node.js, Express, Handlebars, mySQL</p>
+						<p><em>Project Manager, UI/UX developer, Back-end developer</em></p>
+                        <a href="https://race-finder.herokuapp.com/" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <!-- Projects Above -->
+
+				<a id="view-more-projects" href="#">View More Projects</a>
+				<div id="more-projects" class="row">
+				    <div class="project shadow-large">
+				        <div class="project-image">
+				            <a href="https://mstange22.github.io/capitals-quiz/" target="_blank"><img src="assets/images/capitals.jpg" /></a>
+				        </div>
+				        <!-- End .project-image -->
+				        <div class="project-info">
+				            <h3>Capitals Quiz</h3>
+                    		<p>Front-end web application that allows users to test their knowledge on state and world capitals.</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><em>Sole developer</em></p>
+				            <a href="https://mstange22.github.io/capitals-quiz/" target="_blank">View Project</a>
+				        </div>
+				        <!-- End .project-info -->
+				    </div>
+				    <!-- End .project -->
+				    <div class="project shadow-large">
+				        <div class="project-image">
+				            <a href="https://newscraper-ms.herokuapp.com/" target="_blank"><img src="assets/images/newscraper.jpg" /></a>
+				        </div>
+				        <!-- End .project-image -->
+				        <div class="project-info">
+				            <h3>Newscraper</h3>
+                    		<p>Full-stack web application that scrapes the New York Times Business Day</p>
+                    		<p>HTML, CSS, Pure, JavaScript, jQuery, Node.js, Express, Handlebars, MongoDB, Mongoose</p>
+							<p><em>Sole developer</em></p>
+				            <a href="https://newscraper-ms.herokuapp.com/" target="_blank">View Project</a>
+				        </div>
+				        <!-- End .project-info -->
+				    </div>
+				    <!-- End .project -->
+				    <div class="project shadow-large">
+				        <div class="project-image">
+				            <a href="https://mstange22.github.io/giphy-generator/" target="_blank"><img src="assets/images/giphy.jpg" /></a>
+				        </div>
+				        <!-- End .project-image -->
+				        <div class="project-info">
+				            <h3>Giphy Generator</h3>
+                    		<p>Front-end web application that allows users to search for gifs from Giphy through their API.  Create categories and search.  Remove categories</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><em>Sole developer</em></p>
+				            <a href="https://newscraper-ms.herokuapp.com/" target="_blank">View Project</a>
+				        </div>
+				        <!-- End .project-info -->
+				    </div>
+				    <!-- End .project -->
+				    <div class="project shadow-large">
+				        <div class="project-image">
+				            <a href="https://mstange22.github.io/hangman-2.0/" target="_blank"><img src="assets/images/hangman.jpg" /></a>
+				        </div>
+				        <!-- End .project-image -->
+				        <div class="project-info">
+				            <h3>Hangman</h3>
+                    		<p>Front-end web application that allows users to play hangman with U.S. States</p>
+                    		<p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+							<p><em>Sole developer</em></p>
+				            <a href="https://newscraper-ms.herokuapp.com/" target="_blank">View Project</a>
+				        </div>
+				        <!-- End .project-info -->
+				    </div>
+				    <!-- End .project -->
+					<a id="view-less-projects" href="#projects">View Less</a> &nbsp; | &nbsp; <a href="portfolio.html" target="_blank">View All</a>
+				</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+            <li>Skeleton</li>
+            <li>Pure</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>jQuery</li>
+            <li>JSX</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Handlebars</li>
+            <li>MySQL</li>
+            <li>Sequelize</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>Cheerio</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div class="optional-section background-alt">
+    <h2 class="heading">Other Interests</h2>
+
+    <div class="optional-section-block">
+        <h3>Endurance Sports</h3>
+        <p>
+            I was a traditional-team-sport athlete (football, basketball, baseball, soccer) through school and beyond.  At some point later in life, I picked up running and triathlon and have enjoyed competing as an amateaur age-group athlete.
+        </p>
+        <ul>
+            <li>
+                8-time Boston Marathon finisher.
+            </li>
+            <li>
+                Age catergory WINS: Los Angeles Marathon & St. George (Utah) Marathon.
+            </li>
+            <li>
+                4xIronman and multiple half-iron finisher.  2x Ironman World Champion 70.3 qualifier.
+            </li>
+        </ul>
+    </div>
+    <!-- End .optional-section-block -->
+
+</div>
+<!-- End .optional-section -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/mikestange@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 MICHAEL STANGE
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/mstange22" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mike-stange-21004341/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
-</body>
+
 </html>
