@@ -74,7 +74,7 @@ $(document).ready(function() {
         $('header, body').removeClass('active');
     });
 
-    // Load additional projects
+    // Load additional about-me
     $('#view-more-about-me').click(function(e){
         e.preventDefault();
         $(this).fadeOut(300, function() {
@@ -82,13 +82,22 @@ $(document).ready(function() {
         });
     });
 
-    // Hide additional projects
+    // Hide additional about-me
     $('#view-less-about-me').click(function(e){
         e.preventDefault();
+
+        var heading = '#about';
+        var scrollDistance = $(heading).offset().top;
+
+        $('html, body').animate({
+            scrollTop: scrollDistance + 'px'
+        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+
         $('#more-about-me').fadeOut(300, function() {
             $('#view-more-about-me').fadeIn(300);
         });
     });
+
     // Load additional projects
     $('#view-more-projects').click(function(e){
         e.preventDefault();
@@ -100,6 +109,14 @@ $(document).ready(function() {
     // Hide additional projects
     $('#view-less-projects').click(function(e){
         e.preventDefault();
+
+        var heading = '#projects';
+        var scrollDistance = $(heading).offset().top;
+
+        $('html, body').animate({
+            scrollTop: scrollDistance + 'px'
+        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+
         $('#more-projects').fadeOut(300, function() {
             $('#view-more-projects').fadeIn(300);
         });
