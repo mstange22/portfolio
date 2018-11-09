@@ -558,6 +558,10 @@ footer {
 	width: 300px;
 }
 
+.project-image.rx {
+    padding-top: 10px;
+}
+
 .project-info {
     position: absolute;
     top: 50%;
